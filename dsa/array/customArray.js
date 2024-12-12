@@ -13,6 +13,13 @@ class MyArray {
     get (index) {
         return this.data[index];
     }
+
+    pop () {
+        const lastItem = this.data[this.length - 1]
+        delete this.data[this.length - 1]
+        this.length--
+        return lastItem;
+    }
 }
 
 const myNewArray = new MyArray();
@@ -24,6 +31,8 @@ console.log(myNewArray.get(0));
 console.log(myNewArray.get(1));
 console.log(myNewArray.get(2));
 
-
 console.log(myNewArray);
-console.log(myNewArray.get(0));
+
+myNewArray.pop();
+
+console.log("After Pop ----- ", myNewArray);
