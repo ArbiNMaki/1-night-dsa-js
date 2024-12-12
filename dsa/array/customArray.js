@@ -32,6 +32,18 @@ class MyArray {
         this.length--;
         return firstItem;
     }
+
+    delete (index) {
+        const item = this.data[index]
+
+        for (let i = index; i < this.length - 1; i++) {
+            this.data[i] = this.data[i + 1]
+        }
+
+        delete this.data[this.length - 1]
+        this.length--
+        return item;
+    }
 }
 
 const myNewArray = new MyArray();
@@ -39,9 +51,9 @@ myNewArray.push("apple");
 myNewArray.push("banana");
 myNewArray.push("grape");
 
-console.log(myNewArray.get(0));
-console.log(myNewArray.get(1));
-console.log(myNewArray.get(2));
+// console.log(myNewArray.get(0));
+// console.log(myNewArray.get(1));
+// console.log(myNewArray.get(2));
 
 // console.log(myNewArray);
 
@@ -49,6 +61,10 @@ console.log(myNewArray.get(2));
 
 // console.log("After Pop ----- ", myNewArray);
 
+// console.log(myNewArray);
+// console.log(myNewArray.shift());
+// console.log("After Shift ----- ", myNewArray);
+
 console.log(myNewArray);
-console.log(myNewArray.shift());
-console.log("After Shift ----- ", myNewArray);
+console.log(myNewArray.delete(0));
+console.log(myNewArray);
