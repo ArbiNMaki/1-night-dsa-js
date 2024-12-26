@@ -12,3 +12,5 @@ console.log(recursiveFactorial(2));
 console.log(recursiveFactorial(3));
 console.log(recursiveFactorial(4));
 console.log(recursiveFactorial(5));
+
+// BigO - O(n)
