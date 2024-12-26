@@ -1,0 +1,7 @@
+1. Fibonacci Sequence
+2. Factorial of a number
+3. Prime number
+4. Power of two
+5. Recursion
+6. Fibonacci sequence with Recursion
+7. Factorial of a number with Recursion
