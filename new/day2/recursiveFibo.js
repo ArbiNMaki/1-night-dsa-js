@@ -17,3 +17,6 @@ console.log(recursiveFibo(7));
 console.log(recursiveFibo(8));
 console.log(recursiveFibo(9));
 console.log(recursiveFibo(10));
+
+// BigO - O(n) - Iterative
+// BigO - O(2^n) - Recursive
